@@ -1,0 +1,90 @@
+/*  
+*	TODO List App
+*   Author: Deniel Den
+*  	Author URI: https://denielden.github.io
+*/
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    text-align: center;
+    height: 100%;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+    line-height: 1;
+    background: linear-gradient(#890052 65%, white);
+    background-attachment: fixed;
+    color:white;
+    font-size: 1.5rem;
+}
+#main {
+    padding: 2rem 0 rem 0;
+}
+input {
+    border: .3rem solid #ff9200;
+    border-radius: 1rem;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    min-width: 18rem;
+    max-width: 20rem;
+}
+ul#todoList {
+    list-style: none;
+    padding: 0;
+}
+ul#todoList li {
+    text-align: left;
+    border-bottom: .3rem solid #ff9200;
+    padding: .5rem 0;
+    cursor: pointer;
+    min-width: 18rem;
+    max-width: 20rem;
+    margin: auto;
+}
+ul#todoList li:last-child { border-bottom: none; }
+li.completed { text-decoration: line-through; }
+span.completed:after, span.uncompleted:after {
+    content: '\02714';
+    color: green;
+    font-size: 2rem;
+    padding: 1rem;
+}
+span.uncompleted:after {
+    content: '\025A1';
+    color: white;
+}
+ul#todoList li:hover span.cross:after {
+    content: '\02A2F';
+    color: red;
+    float: right;
+    padding: 0;
+    font-size: 2.5rem;    
+}
+button {
+    text-transform: uppercase;
+    background-color: white;
+    border: .3rem solid #ff9200;
+    padding: .3rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+button.active {    
+    background-color: #ff9200;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+footer a {
+    color: #890052;
+    font-weight: 800;
+}
