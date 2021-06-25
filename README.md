@@ -1,1 +1,2 @@
-# todo-app
+# Den ToDo-app
+Work in progress

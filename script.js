@@ -1,8 +1,9 @@
-/*  
-*	TODO List App
+/* **************************************************
+*	ToDo List App
 *   Author: Deniel Den
-*  	Author URI: https://denielden.github.io
-*/
+*  	Author URI: https://www.linkedin.com/in/denielden
+*	Version: 1.0.0
+************************************************** */
 function Todolist() {
     let ulTodo, input, btnAll, btnCompleted, btnTodo;
     
@@ -162,17 +163,15 @@ function Todolist() {
     };
 
     return {
-        getTodos : function() {
-            return todos;
-        },
+        getTodos : () => { todos; },
         init : function() {
             renderTodosList();
         }
     }
 }
-
 //render
 const myTodo = Todolist();
 myTodo.init();
-
 //console.log(myTodo.getTodos())
+
+document.querySelector('#date').innerHTML = new Date().getFullYear();

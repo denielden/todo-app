@@ -1,36 +1,40 @@
-/*  
-*	TODO List App
+@charset "UTF-8";
+/* **************************************************
+*	ToDo List App
 *   Author: Deniel Den
-*  	Author URI: https://denielden.github.io
-*/
+*  	Author URI: https://www.linkedin.com/in/denielden
+*	Version: 1.0.0
+************************************************** */
 html {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
+    margin: 0; padding: 0;
+    border: 0; outline: 0;
     text-align: center;
     height: 100%;
 }
 body {
     box-sizing: border-box;
-    font-family: 'Helvetica';
+    margin: 0;
     line-height: 1;
-    background: linear-gradient(#890052 65%, white);
-    background-attachment: fixed;
-    color:white;
-    font-size: 1.5rem;
+    background: linear-gradient(#890052 65%, #fff) fixed;
+    color:#fff;
+    font-size: 1.2rem;
 }
+html, body, input, button { font-family: 'Poiret One', sans-serif; }
 #main {
-    padding: 2rem 0 rem 0;
+    padding: 2rem 0;
 }
 input {
-    border: .3rem solid #ff9200;
-    border-radius: 1rem;
+    border: none;
+    border-radius: 4rem;
     padding: .8rem 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     min-width: 18rem;
     max-width: 20rem;
+}
+input:focus, input:focus-visible {
+    border-color: #ff9200;
+    box-shadow: 0 0 0 .4rem rgba(255,146,0,.5);
+    outline: 0;
 }
 ul#todoList {
     list-style: none;
@@ -38,7 +42,7 @@ ul#todoList {
 }
 ul#todoList li {
     text-align: left;
-    border-bottom: .3rem solid #ff9200;
+    border-bottom: .1rem solid #ff9200;
     padding: .5rem 0;
     cursor: pointer;
     min-width: 18rem;
@@ -49,42 +53,37 @@ ul#todoList li:last-child { border-bottom: none; }
 li.completed { text-decoration: line-through; }
 span.completed:after, span.uncompleted:after {
     content: '\02714';
-    color: green;
+    color: rgb(6, 180, 0);
     font-size: 2rem;
     padding: 1rem;
 }
 span.uncompleted:after {
     content: '\025A1';
-    color: white;
+    color: #fff;
 }
 ul#todoList li:hover span.cross:after {
     content: '\02A2F';
-    color: red;
+    color: #ff1100;
     float: right;
     padding: 0;
     font-size: 2.5rem;    
 }
 button {
     text-transform: uppercase;
-    background-color: white;
-    border: .3rem solid #ff9200;
-    padding: .3rem 1rem;
+    background-color: #fff;
+    color:#000;
+    border: .2rem solid #ff9200;
+    padding: .4rem 1rem;
     margin-top: 1rem;
     border-radius: 4rem;
+    font-size: 1rem;
     cursor: pointer;
 }
-button.active {    
-    background-color: #ff9200;
-}
+button.active { background-color: #ff9200; }
 footer{
     position: fixed;
     bottom: 0;
-    font-size: 1rem;
-    text-align: center;
-    color: black;
+    color: #000;
     width: 100%;
 }
-footer a {
-    color: #890052;
-    font-weight: 800;
-}
+footer a { color: #890052; }
