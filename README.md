@@ -11,4 +11,4 @@ Organize and optimize your day using the task list.
 ## ` - work in progress - ` 
 
 ## Licence 
-[MIT licence](https://github.com/denielden/React-ToDo-app/blob/main/LICENSE)
+[MIT licence](https://github.com/denielden/ToDo-app/blob/main/LICENSE)
