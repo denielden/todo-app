@@ -1,2 +1,14 @@
-# Den ToDo-app
-Work in progress
+# ToDo-app
+Vanilla javascript ToDo app with Local Storage:
+
+- Add tasks
+- Mark tasks as todo or completed
+- Delete tasks
+- Filter tasks by state
+
+Organize and optimize your day using the task list.
+
+## ` - work in progress - ` 
+
+## Licence 
+[MIT licence](https://github.com/denielden/React-ToDo-app/blob/main/LICENSE)
